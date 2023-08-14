@@ -1,0 +1,105 @@
+.lots {
+  width: 1340px;
+  margin: 0 auto;
+}
+.lots__heading {
+  color: $color_black;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-top: 180px;
+  padding-bottom: 27px;
+}
+.lots__card-list {
+  display: flex;
+  column-gap: 25px;
+}
+
+.lots__card-list-item {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 30px;
+}
+.card-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-decoration: none;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 430px;
+    height: 450px;
+    background-color: $color_black;
+    transition: opacity 0.2s ease-in;
+    opacity: 0.1;
+    z-index: 1;
+  }
+  &:hover::before {
+    opacity: 0.6000000238418579;
+  }
+}
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+  @extend %image__size;
+  transition: transform 0.2s ease-in;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+  @extend %image__size;
+  transition: transform 0.2s ease-in;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+  @extend %image__size;
+  transition: transform 0.2s ease-in;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+.card__title {
+  color: $color_white;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  padding: 50px 40px 0;
+  z-index: 1;
+}
+.card__subtitle {
+  color: $color_white;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  border: none;
+  padding: 0 40px 50px;
+  z-index: 1;
+}
+
+.lots__look-more-link {
+  color: $color_black;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 40px;
+  cursor: pointer;
+  transition: opacity ease-in 0.2s;
+  &:hover {
+    opacity: 0.6;
+  }
+}

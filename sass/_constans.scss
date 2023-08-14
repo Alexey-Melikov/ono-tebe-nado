@@ -1,0 +1,21 @@
+$color_black: #000;
+$color_white: #fff;
+
+%aligned__text {
+  z-index: 2;
+  color: $color_white;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115%;
+  letter-spacing: 30px;
+  text-transform: uppercase;
+}
+
+%image__size {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 430px;
+  height: 450px;
+}
